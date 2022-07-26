@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sites",
+  "info": {
+    "singularName": "site",
+    "pluralName": "sites",
+    "displayName": "site"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title",
+      "required": true
+    },
+    "domain": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
